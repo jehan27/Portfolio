@@ -1,0 +1,310 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #FFFDD0;
+    width: 100%;
+    background-color: black;
+    margin: 0; 
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+   
+}
+footer{
+    background-color: #FFFDD0;
+}
+.container{
+    width: 100%;
+}
+header nav a:hover,
+header nav a:active{
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+.web-project a p{
+    color: #000;
+}
+/**header **/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFDD0;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    height: 5rem;
+    top: 0;
+    position: sticky;
+}
+.hidden{
+    display: none;
+}
+.hidden-icon{
+    display: none;
+}
+
+.logo{
+    width: 55%;
+}
+.logo img{ 
+    width: 100%;
+}
+
+
+h1,
+h2,
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.2rem;
+    color: #fffdd0;  
+}
+
+h3{
+    font-size: 2.8rem;
+    color: #000;
+}
+header nav{
+    position: absolute;
+    background-color: black;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+   text-transform: uppercase;
+}
+
+header nav a{
+     color: #fffdd0;
+ 
+}
+
+header nav li{
+    padding: 1rem 0 1rem 0;
+}
+
+
+
+/**banner**/
+.banner{
+    background-image: url(/img/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 50%;
+}
+hr.dotted {
+    border-top: 1px dotted red;
+    border-bottom: 1px dotted red;
+  }
+.banner-contents {
+    color: black;
+}
+
+/**about me**/
+.about-contents{
+     text-align: center;
+     color:#FFFDD0;
+}
+
+
+/**projects**/
+.three-projects{
+    text-align: center;
+}
+.web-project img{
+    width: 75%;
+}
+
+.web-project{
+    background-color: #FFFDD0;
+    margin: 0.8rem 4rem 0.8rem 4rem;
+}
+.web-project p,
+.web-project h3{
+    padding: 1.5rem;
+}
+
+/* contact-form */
+.contact textarea{
+    min-height: 10rem;
+    max-width: 40rem;
+    max-height: 10rem;
+    min-width: 40rem;
+    margin-top: 0.8rem;
+}
+
+.contact input{
+   min-height: 4rem;
+    max-width: 40rem;
+    max-height: 4rem;
+    min-width: 40rem;
+    margin-top: 0.8rem;
+}
+
+
+/**resume**/
+.my-resume{
+    text-align: center;
+}
+
+/**contact**/ 
+.contact{
+    text-align: center;
+}
+
+/**footer**/
+.footer{
+    text-align: center;
+
+}
+
+.left{
+    padding-top: 1rem;
+}
+
+.footer p { color: #000;}
+
+
+@media (min-width: 900px) {
+    header{
+        justify-content: space-between;
+        align-items: center;
+        height: 9rem;
+    }
+     
+    .logo {
+        width: 25%;
+    }
+   
+    .menu-container{ 
+        display: none;
+    }
+
+    header nav a{
+        color: #000;
+    }
+    header ul li{
+        margin: 0 0.8rem 0 0.8rem;
+   
+    }
+    
+    header nav{
+        position: unset;
+        width: auto;
+        background-color: transparent;
+    }
+    .banner{
+        height: 50%;
+    }
+    header nav ul{
+        display:flex !important;
+    }
+
+    .hidden{
+        display: flex;
+    }
+  
+    /* banner */
+    .banner-contents h1{
+        text-align:  center;
+    }
+    .banner-contents{
+        margin-top: -40rem;
+    }
+    .list-for-banner{
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .list-for-banner li{
+        text-align: left;
+    }
+    /* projects */
+  
+  .list-of-projects{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .web-project{
+      width: 28%;
+  }
+
+ /* contact-form */
+
+ .contact textarea{
+     min-height: 10rem;
+     max-width: 75rem;
+     max-height: 10rem;
+     min-width: 75rem;
+     margin-top: 0.8rem;
+ }
+
+ .contact input{
+    min-height: 4rem;
+     max-width: 75rem;
+     max-height: 4rem;
+     min-width: 75rem;
+     margin-top: 0.8rem;
+ }
+
+ /* footer */
+ .left{
+     padding-top: 1rem;
+    
+ }
+ 
+ .right p {
+     color: black
+ }
+ .social-media{
+     display: flex;
+     justify-content: center;
+    gap: 2rem;
+ }
+ .footer{ display: flex;
+max-height: 12rem;
+padding: 1rem;
+align-items: center;
+
+ }
+ .left,
+ .right{
+     width: 50%;
+ }
+
+ /* bannerlist */
+ .banner-contents ul li {
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ h1{
+     font-size: 5rem;
+
+ }
+ h2{
+     font-size: 4rem;
+ }
+ h3{
+     font-size: 3.2rem;
+ }
+ main {
+     font-size: 2rem;
+ }
+}

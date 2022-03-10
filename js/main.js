@@ -1,12 +1,25 @@
-// create an event listener on the button
-// 1. select the button element
-var button = document.querySelector('.toggle-btn');
 
-// 2. add the click event to the button
-button.addEventListener('click', function(){
-  // what happens when the button is clicked goes in here
-  // for this example, when the button is clicked, we want to show the navigation
-  // I'll need to select the nav I want to show
-  document.querySelector('nav').classList.toggle('show-nav');
+let menuIcons = document.querySelectorAll('.menu-icon');
+let navMenu = document.querySelector('header nav ul');
+
+console.log(menuIcons[0]);
+
+//toggle nav Icon between burger and X
+function toggleNav(event){
+	navMenu.classList.toggle('hidden');
+	menuIcons[0].classList.toggle('hidden-icon');
+	menuIcons[1].classList.toggle('hidden-icon');
+}
+
+for(i = 0; i < menuIcons.length; i++) {
+	menuIcons[i].addEventListener('click', (event) =>{
+		toggleNav();
+	});
+}
+
+//close nav when nav item clicked
+navMenu.addEventListener('click',(event)=>{
+	if(event.target.tagName.toLowerCase() === 'a'){
+		toggleNav();
+	}
 });
-

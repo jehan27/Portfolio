@@ -1,0 +1,6 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: jidul1.dmitstudent.ca/white-macadamia-nut-cookie/sitemap.xml
+ 

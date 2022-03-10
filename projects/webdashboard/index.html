@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Dashboard Page by Jehan Idul</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <script src="js/main.js" defer> </script>
+</head>
+<body>
+    <header class="bg-red-400 text-grey-100 py-4">
+        
+            <div class="container mx-auto px-2">
+                <div class="md:flex md:justify-between items-center">
+                <div class="flex justify-between items-center">
+                    <a class="text-3xl lg:text:5xl" href="index.html"><h1 class=" font-semibold ">JTrueWebsite</h1></a>
+                    <button class="toggle-icon p-2 md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+    
+                <nav class=" sr-only focus:not-sr-only md:not-sr-only ">
+                    <ul class=" text-base md:flex  lg:text-2xl  ">
+                    
+                        <li  ><a class=" block rounded hover:bg-white hover:text-red-400 flex justify-center  p-3 my-1.5 md:mx-1.5 " href="#"> Ronnie Moon</a></li>
+                        <li><a class="block  flex justify-center p-3 my-1.5 md:mx-1.5 rounded hover:bg-white hover:text-red-400 " href="#"><svg   xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                          </svg> Notifications</a></li>
+                        <li><a class="block flex justify-center flex p-3 my-1.5 md:mx-1.5 rounded hover:bg-white hover:text-red-400" href="#"><svg   xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                          </svg>Messages</a></li>
+                        <li><a class="block flex justify-center p-3 my-1.5 md:mx-1.5 rounded hover:bg-white hover:text-red-400" href="#"><svg   xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>Settings</a></li>
+                        <li><a class="block  flex justify-center p-3 my-1.5 md:mx-1.5 rounded hover:bg-white hover:text-red-400" href="#"><svg   xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                          </svg>Log Out</a></li>
+                    </ul>
+                </nav>
+        </div>
+        </div>
+    </header>
+
+    <main>
+      
+        <div> <!-- projects and messages -->
+           <div class=" p-8 lg:p-6  border-b-4 border-red-400"> <!-- project -->
+            <h2 class="text-3xl font-bold">Recent Projects</h2>
+            <div class="text-center p-8">
+                <a class="hover:bg-red-400  hover:text-white p-4 text-center  border-4 border-black border-opacity-75 p-2 text-center" href="#"> Create New Project </a>
+            </div>
+            <div><!-- 1st project -->
+                    <div class="border-4 border-black border-opacity-75 sm:my-8 sm:p-4 lg:my-4  lg:mx-4 lg:p-4"><!-- project title, name and date -->
+                        <ul class="text-base">
+                            <li><h3 class="text-2xl font-semibold">Product Landing Page</h3></li>
+                            <li><h4>From: Steve Fox</h4></li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequatur eveniet provident tempore maiores vero, quibusdam accusamus, ut quo distinctio voluptatum rem exercitationem. Repudiandae quae delectus, eos vero reprehenderit dolorem.<br><span><a href="#">...see more</a></span></li>
+                            <li><a  class="flex" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                              </svg><p>1 pdf attached</p></a></li>
+                            <li><p>Start Date: March 6, 2021</p></li>
+                            <li><p>Due date: January 10, 2022</p></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="border-4 border-black border-opacity-75 sm:my-8 sm:p-4 lg:my-4  lg:mx-4 lg:p-4"><!-- project title, name and date -->
+                        <ul class="text-base">
+                            <li><h3  class="text-2xl font-semibold">Java Script Drawing</h3></li>
+                            <li><h4>From: Ray Allen </h4></li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequatur eveniet provident tempore maiores vero, quibusdam accusamus, ut quo distinctio voluptatum rem exercitationem. Repudiandae quae delectus, eos vero reprehenderit dolorem.<br><span><a href="#">...see more</a></span></li>
+                            <li><p>Start date: April 15, 2021</p></li>
+                            <li><p>Due date: January 15, 2022</p></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="border-4 border-black border-opacity-75 sm:my-8 sm:p-4 lg:my-4  lg:mx-4 lg:p-4"><!-- project title, name and date -->
+                        <ul class="text-base">
+                            <li><h3  class="text-2xl font-semibold">Product Landing Page</h3></li>
+                            <li><h4>From: Steve Fox</h4></li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate consequatur eveniet provident tempore maiores vero, quibusdam accusamus, ut quo distinctio voluptatum rem exercitationem. Repudiandae quae delectus, eos vero reprehenderit dolorem.<br><span><a href="#">...see more</a></span></li>
+                            <li><a class='flex' href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                              </svg><p>+11 pdf attached</p></a></li>
+                            <li><p>Start Date: March 6, 2021</p></li>
+                            <li><p>Due date: January 10, 2022</p></li>
+                        </ul>
+
+                    </div>
+            </div><!-- end 1st project -->
+           </div> <!-- end project -->
+
+           <div class=" p-8 lg:p-6  border-b-4 border-red-400"> <!-- messages  -->
+            <h2 class="text-3xl font-bold">Messages</h2>
+            <div class="text-center p-8">
+                <a class="hover:bg-red-400  hover:text-white p-4 text-center  border-4 border-black border-opacity-75 p-2 text-center" href="#"> Create New Message </a>
+            </div>
+            <div class="text-center p-8">
+                <a class="hover:bg-red-400  hover:text-white p-4 text-center  border-4 border-black border-opacity-75 p-2 text-center" href="#"> Unread Messages </a>
+            </div>
+            <div class="lg:flex lg:justify-around ">
+                <div class="border-4 border-black border-opacity-75 text-base sm:my-8 sm:p-4 lg:my-4  lg:mx-4 lg:p-4"> <!-- 1st message -->
+                    <div><!-- name and date -->
+                        <ul class="flex justify-between ">
+                            <li><h3>Xavier Li</h3></li>
+                            <li>2021-11-01</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-2"><!-- subject line and message line-->
+                        <h4  class="text-2xl font-semibold"> Send your work to me</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque fugiat eligendi doloremque ipsum quisquam vero ut facere quasi vitae maxime sapiente, in deserunt sed quam iste, enim maiores. Dicta! <span><a href="#">...see more</a></span></p>
+                    </div>
+
+                    <div class="lg:p-4"><!-- reply and delete -->
+                        <ul class=" flex justify-around">
+                            <li><a class="p-3 my-1.5 md:mx-1.5  hover:bg-red-400 hover:text-white" href="#">Reply to this Message</a></li>
+                            <li><a class=" p-3 my-1.5 md:mx-1.5  hover:bg-red-400 hover:text-white" href="#">Delete this Message</a></li>
+                        </ul>
+                    </div>
+                    
+                </div> <!-- end of 1st message-->
+
+                <div class="border-4 border-black border-opacity-75  text-base sm:my-8 sm:p-4 lg:my-4 lg:mx-4 lg:p-4"> <!-- 2nd message -->
+                    <div ><!-- name and date -->
+                        <ul class="flex justify-between">
+                            <li><h3>James Bond</h3></li>
+                            <li>2021-10-20</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-2"><!-- subject line and message line-->
+                        <h4  class="text-2xl font-semibold">Private Meeting in an hour</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque fugiat eligendi doloremque ipsum quisquam vero ut facere quasi vitae maxime sapiente, in deserunt sed quam iste, enim maiores. Dicta! <span><a href="#">...see more</a></span></p>
+                    </div>
+
+                    <div class="lg:p-4"><!-- reply and delete -->
+                        <ul class=" flex justify-around">
+                            <li><a class="p-3 my-1.5 md:mx-1.5  hover:bg-red-400 hover:text-white" href="#">Reply to this Message</a></li>
+                            <li><a class=" p-3 my-1.5 md:mx-1.5  hover:bg-red-400 hover:text-white" href="#">Delete this Message</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- end of 2nd message-->
+
+                <div class="border-4 border-black border-opacity-75   text-base sm:p-4 lg:my-4 lg:mx-4 lg:p-4"> <!-- 3rd message -->
+                    <div><!-- name and date -->
+                        <ul class="flex justify-between">
+                            <li><h3>Jacob McArthur</h3></li>
+                            <li>2021-10-18</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-2"> <!-- subject line and message line-->
+                        <h4  class="text-2xl font-semibold"> Project Approved</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque fugiat eligendi doloremque ipsum quisquam vero ut facere quasi vitae maxime sapiente, in deserunt sed quam iste, enim maiores. Dicta!<span><a href="#">...see more</a></span></p>
+                    </div>
+
+                    <div class="lg:p-4"><!-- reply and delete -->
+                        <ul class=" flex justify-around">
+                            <li><a class="p-3 my-1.5 md:mx-1.5 hover:bg-red-400 hover:text-white" href="#">Reply to this Message</a></li>
+                            <li><a class=" p-3 my-1.5 md:mx-1.5 hover:bg-red-400 hover:text-white" href="#">Delete this Message</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- end of 3rd message-->
+               
+            </div>
+            <div class="text-center p-8">
+                <a class="hover:bg-red-400  hover:text-white p-4 text-center  border-4 border-black border-opacity-75 p-2 text-center" href="#"> Load More </a>
+            </div>
+      
+            
+            
+           </div> <!--  end messages-->
+           
+        </div> <!-- 1st main div -->
+    </main>
+
+    <footer class="p-8 text-center text-red-400">
+        <p>For Educational Purpose only</p>
+    </footer>
+</body>
+</html>

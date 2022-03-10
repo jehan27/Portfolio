@@ -1,0 +1,537 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+   align-content: center;
+   max-width: 1920px;
+   min-width: 400px;
+   margin: 0 auto;
+   background-color:	#FAFAD2;
+   line-height: 2;
+   }
+  
+   main{
+    padding: 3%;
+   }
+  
+   header {
+    padding: 2%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    color: #3f3f3f;
+    text-decoration: none;
+}
+
+/* this will be the event button but for now style it */
+.toggle-icon span {
+    width: 30px;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 100px;
+    background-color: #FAFAD2;
+    display: block;
+}
+
+.menu-links li {
+    /* the extra height from the line-height makes this easier to click on mobile screens. Link areas should be large enough to click with a big fat thumb */
+    line-height: 40px;
+    text-align: center;
+}
+
+.menu-links a {
+    /* this allows the clickable area to take up the full width and height of the li element instead of just having the text itself clickable */
+    display: block;
+}
+
+/* Step 2: Now lets hide the menu links. Once hidden that's the defautl state - how the screen looks when first loaded */
+
+header nav {
+    /* we can hide this nav with display: none, however, we can't apply trasition properties to display: none & display: block. We can apply transition properties to height values but it will only work with max-height. Note, you could also use visability and opactity as we did with the dropdown menu */
+    max-height: 0;
+    overflow: hidden;
+    /* the transition property will make this change happen smoothly */
+    transition: max-height .7s ease-in-out
+}
+
+/* Step 3: Create a special class that will show the menu. This class exists only in the CSS file for now, we don't add it in the markup. The javascript will do that for us, Let's go and do that in the js file. */
+.show-nav {
+    max-height: 19rem;
+}
+
+
+  
+  .banner{
+      background-image: url(../img/first-cookie.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+       max-height: 100vh;
+      text-align:  center;
+      margin: 0 2% 0 2%;
+      position: relative;
+      padding: 15%;
+  }
+  
+  
+  .banner p{
+    color: #FAFAD2; 
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  
+ header{
+   background-color: #642b09;
+ }
+  
+
+
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* ==========================================================================
+     Author's custom styles
+     ========================================================================== */
+    footer{
+      text-align: center;
+      font-size: 1rem;
+      padding: 2%;
+      background-color: #642b09;
+      display: flex;
+    }
+  
+    footer img{
+      width: 15%;
+    }
+  
+    footer p{
+      color: #FAFAD2;
+    }
+    footer .right a{
+     padding: 2%;
+    }
+  
+    footer img{
+      width: 15%;
+    }
+    footer .left,
+    footer .right{
+      width: 50%;
+    }
+   h1{
+    font-size: 2.8rem;
+    font-family: 'Lato', sans-serif;
+    color: #FAFAD2; 
+    margin-top: 2%;
+  }
+  
+   h2{
+    font-family: 'Cantarell', sans-serif;
+    font-size: 2rem;
+   }
+  
+  
+   h3{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    color:#642b09;
+    font-size: 1.8rem;
+   }
+   p{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+    color:#642b09;
+   }
+   .bar{
+     height: 4px;
+     width: 25%;
+     background-color: red;
+     text-align:  center;
+     margin-left: 37.5%;
+     margin-right: 37.5%;
+     margin-top: 1.5%;
+   }
+ 
+   .new span a{
+    color: red;
+  }
+  
+   /*main*/
+  
+  
+ 
+  .origin img{
+    width: 40%;
+    padding: 2%;
+    margin-left: 30%;  }
+  
+  .second-artticle p{
+    margin-left: 3%;
+  }
+   main ul li{
+     list-style: none;
+     width: 30%;
+   }
+
+   main  ul{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
+
+   main ul li img{
+     width: 100%;
+     height: auto;
+   }
+   .third-article {
+    display: flex;
+    padding: 3%;
+  }
+  .third-article .image-text{
+    display: flex;
+  }
+ 
+  .third-article .txt{
+    margin-left: 2%;
+  }
+  .third-article img{
+    width: 40%;
+  }
+
+  .chocolate img{
+    width: 50%
+  }
+  
+  .thankyou img{
+    width: 50%;
+  }
+
+  .fourth-article h2,
+  .fifth-article h2,
+  .new h2{
+    text-align: center;
+  }
+
+  .new-photos{
+    display: flex;
+   justify-content: space-evenly;
+   margin-left: 5%;
+  }
+  /* unvisited link and visited link*/
+  a:link{
+    color: #FAFAD2;  
+  }
+  a:visited {
+    color: #FAFAD2; 
+  }
+  
+
+
+
+  /* mouse over link and selected link*/
+  header a:hover,
+  .left a:hover,
+  .left a:active,
+  header a:active {
+    color: #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  
+  /* ==========================================================================
+     Helper classes
+     ========================================================================== */
+  
+  /*
+   * Hide visually and from screen readers
+   */
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+  
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+  }
+  
+  /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+  
+  .sr-only.focusable:active,
+  .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+  
+  /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
+  /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+  
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  /* ==========================================================================
+     EXAMPLE Media Queries for Responsive Design.
+     These examples override the primary ('mobile first') styles.
+     Modify as content requires.
+     ========================================================================== */
+  
+  @media only screen and (min-width: 600px) {
+    /* Style adjustments for viewports that meet the condition */
+    .toggle-icon {
+      display: none;
+  }
+
+  header nav {
+      /* we want to see the nav by default, so make sure it's shown */
+      max-height: 76px;
+  }
+
+  .menu-links,
+  header {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .menu-links li {
+      padding: 7px 7px;
+      margin: 5px 5px;
+  }
+
+  .banner{
+    background-image: url(../img/first-cookie.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .origin img{
+    max-width: 600px;
+  }
+
+  .third-article img{
+    width: 600px;
+  }
+  
+
+  @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+    }
+  }
+  /* ==========================================================================
+     Print styles.
+     Inlined to avoid the additional HTTP request:
+     https://www.phpied.com/delay-loading-your-print-css/
+     ========================================================================== */
+  
+  @media print {
+    *,
+    *:before,
+    *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+      content: "";
+    }
+    pre {
+      white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+    /*
+       * Printing Tables:
+       * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+       */
+    thead {
+      display: table-header-group;
+    }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }
