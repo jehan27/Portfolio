@@ -116,11 +116,12 @@ hr.dotted {
 
 /**about me**/
 .about-contents{
-     text-align: justify;
+     text-align: center;
      color:#FFFDD0;
 }
 .about-text{
     padding: 1.2rem;
+    text-align: justify;
 }
 
 
