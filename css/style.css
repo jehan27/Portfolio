@@ -160,10 +160,10 @@ hr.dotted {
 .projects-list{
     display: flex;
     justify-content: center;
-    background-color: #FFFDD0;
    
 }
 
+.projects-list li {background-color: #FFFDD0;}
 /* contact-form */
 .contact textarea{
     min-height: 10rem;
