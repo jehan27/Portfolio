@@ -115,7 +115,7 @@ hr.dotted {
     border-bottom: 1px dotted red;
   }
 .banner-contents {
-  
+    background-color: black;
     color: #FFFDD0;
 }
 
