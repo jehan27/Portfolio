@@ -267,12 +267,7 @@ hr.dotted {
      color: black
  }
  
- .footer{ display: flex;
-max-height: 12rem;
-padding: 1rem;
-align-items: center;
 
- }
 
  /* bannerlist */
  .banner-contents ul li {
