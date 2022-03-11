@@ -182,7 +182,7 @@ hr.dotted {
 .submit{
     padding: 8px;
     font-size: 24px;
-    margin-bottom: 0.5rem;
+   
 }
 @media (min-width: 900px) {
     header{
@@ -265,6 +265,10 @@ hr.dotted {
      max-height: 4rem;
      min-width: 75rem;
      margin-top: 0.8rem;
+ }
+
+ .contact-form {
+    padding-bottom: 0.5rem;
  }
 
  /* footer */
