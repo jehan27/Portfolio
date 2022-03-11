@@ -161,7 +161,9 @@ hr.dotted {
     display: flex;
     justify-content: center;
     background-color: #FFFDD0;
+    width: 60%;
 }
+
 /* contact-form */
 .contact textarea{
     min-height: 10rem;
