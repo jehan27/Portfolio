@@ -173,7 +173,7 @@ hr.dotted {
 }
 
 
-.list-for-banner {
+.list-for-banner  li{
     font-size: 1.8rem;
 }
 .footer p { color: #000;}
