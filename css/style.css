@@ -66,6 +66,7 @@ h3{
 
 h1{
     font-size: 3.8rem;
+    color: #FFFDD0;
 }
 h2{
     font-size: 3.2rem;
@@ -105,7 +106,7 @@ header nav li{
     height: 100vh;
     text-align: center;
     padding-top: 50%;
-    color: #FFFDD0;
+   
 }
 
 
