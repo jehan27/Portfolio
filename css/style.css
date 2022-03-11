@@ -149,6 +149,18 @@ hr.dotted {
     color: #000;
 }
 
+/* photography-projects */
+.projects{
+    text-align: center;
+}
+
+.projects img{
+    width: 50%;
+}
+.projects-list{
+    display: flex;
+    justify-content: center;
+}
 /* contact-form */
 .contact textarea{
     min-height: 10rem;
