@@ -141,6 +141,7 @@ hr.dotted {
 .web-portfolio{
     background-color: #FFFDD0;
     margin: 0.8rem 4rem 0.8rem 4rem;
+    color: #000;
 }
 .web-portfolio p,
 .web-portfolio h3{
