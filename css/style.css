@@ -131,19 +131,19 @@ hr.dotted {
 
 
 /**projects**/
-.three-projects{
+.three-portfolio{
     text-align: center;
 }
-.web-project img{
+.web-portfolio img{
     width: 75%;
 }
 
-.web-project{
+.web-portfolio{
     background-color: #FFFDD0;
     margin: 0.8rem 4rem 0.8rem 4rem;
 }
-.web-project p,
-.web-project h3{
+.web-portfolio p,
+.web-portfolio h3{
     padding: 1.5rem;
 }
 
@@ -247,14 +247,14 @@ hr.dotted {
     .list-for-banner li{
         text-align: left;
     }
-    /* projects */
+    /* portfolio */
   
-  .list-of-projects{
+  .list-of-portfolio{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
   }
-  .web-project{
+  .web-portfolio{
       width: 28%;
   }
 
