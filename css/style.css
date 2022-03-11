@@ -172,9 +172,7 @@ hr.dotted {
 
 }
 
-.left{
-    padding-top: 1rem;
-}
+
 
 .footer p { color: #000;}
 
@@ -263,28 +261,17 @@ hr.dotted {
  }
 
  /* footer */
- .left{
-     padding-top: 1rem;
-    
- }
+ 
  
  .right p {
      color: black
  }
- .social-media{
-     display: flex;
-     justify-content: center;
-    gap: 2rem;
- }
+ 
  .footer{ display: flex;
 max-height: 12rem;
 padding: 1rem;
 align-items: center;
 
- }
- .left,
- .right{
-     width: 50%;
  }
 
  /* bannerlist */
