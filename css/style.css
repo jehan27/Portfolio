@@ -105,11 +105,10 @@ header nav li{
     height: 100vh;
     text-align: center;
     padding-top: 50%;
-}
-
-.banner li{
     color: #FFFDD0;
 }
+
+
 hr.dotted {
     border-top: 1px dotted red;
     border-bottom: 1px dotted red;
