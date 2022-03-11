@@ -116,6 +116,7 @@ hr.dotted {
   }
 .banner-contents {
     background-color: black;
+    opacity: 0.5;
     color: #FFFDD0;
 }
 
