@@ -181,6 +181,7 @@ hr.dotted {
 
 button{
     padding: 8px;
+    font-size: 24px;
 }
 @media (min-width: 900px) {
     header{
