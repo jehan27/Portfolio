@@ -179,7 +179,9 @@ hr.dotted {
 
 .footer p { color: #000;}
 
-
+button{
+    padding: 2rem;
+}
 @media (min-width: 900px) {
     header{
         justify-content: space-between;
