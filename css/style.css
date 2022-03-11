@@ -163,7 +163,8 @@ hr.dotted {
    
 }
 
-.projects-list li {background-color: #FFFDD0;}
+.projects-list li {background-color: #FFFDD0;
+width: 60%;}
 /* contact-form */
 .contact textarea{
     min-height: 10rem;
