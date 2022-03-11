@@ -178,7 +178,7 @@ hr.dotted {
 /**footer**/
 .footer{
     text-align: center;
-
+    padding: 1rem;
 }
 
 .banner-list{
