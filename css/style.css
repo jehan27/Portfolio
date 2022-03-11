@@ -182,6 +182,7 @@ hr.dotted {
 .submit{
     padding: 8px;
     font-size: 24px;
+    margin-bottom: 0.5rem;
 }
 @media (min-width: 900px) {
     header{
