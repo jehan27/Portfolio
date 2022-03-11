@@ -150,17 +150,17 @@ hr.dotted {
 /* contact-form */
 .contact textarea{
     min-height: 10rem;
-    max-width: 40rem;
+    max-width: 20rem;
     max-height: 10rem;
-    min-width: 40rem;
+    min-width: 20rem;
     margin-top: 0.8rem;
 }
 
 .contact input{
    min-height: 4rem;
-    max-width: 40rem;
+    max-width: 20rem;
     max-height: 4rem;
-    min-width: 40rem;
+    min-width: 20rem;
     margin-top: 0.8rem;
 }
 
