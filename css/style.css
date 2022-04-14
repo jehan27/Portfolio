@@ -119,6 +119,9 @@ hr.dotted {
      color: #FFFDD0;
 }
 
+.banner-list li{
+    color: #000;
+}
 /**about me**/
 .about-contents{
      text-align: center;
