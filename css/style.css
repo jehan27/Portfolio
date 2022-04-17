@@ -237,7 +237,7 @@ hr.dotted {
         background-color: transparent;
     }
     .banner{
-        height: 5%;
+       background-size: contain;
     }
   
 
