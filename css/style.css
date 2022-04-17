@@ -237,7 +237,7 @@ hr.dotted {
         background-color: transparent;
     }
     .banner{
-       background-size: contain;
+        height: 50%;
     }
   
 
@@ -250,7 +250,7 @@ hr.dotted {
         text-align:  center;
     }
     .banner-contents{
-        margin-top: -45rem;
+        margin-top: -40rem;
     }
     .list-for-banner{
         text-align: center;
