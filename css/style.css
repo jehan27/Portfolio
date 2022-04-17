@@ -119,9 +119,7 @@ hr.dotted {
      color: #FFFDD0;
 }
 
-.banner-list li{
-    color: #000;
-}
+
 /**about me**/
 .about-contents{
      text-align: center;
@@ -231,10 +229,7 @@ hr.dotted {
     header nav a{
         color: #000;
     }
-    header ul li{
-        margin: 4rem 0.8rem 0 0.8rem;
    
-    }
     
     header nav{
         position: unset;
@@ -244,9 +239,7 @@ hr.dotted {
     .banner{
         height: 50%;
     }
-    header nav ul{
-        display:flex !important;
-    }
+  
 
     .hidden{
         display: flex;
@@ -257,7 +250,7 @@ hr.dotted {
         text-align:  center;
     }
     .banner-contents{
-        margin-top: -40rem;
+        margin-top: -30rem;
     }
     .list-for-banner{
         text-align: center;
