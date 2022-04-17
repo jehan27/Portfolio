@@ -249,7 +249,9 @@ hr.dotted {
     .banner-contents h1{
         text-align:  center;
     }
-   
+    .banner-contents{
+        margin-top: -45rem;
+    }
     .list-for-banner{
         text-align: center;
         display: flex;
