@@ -264,7 +264,7 @@ hr.dotted {
         display: flex;
         justify-content: space-evenly;
     }
-    .list-for-banner a{
+    .list-for-banner button{
         font-size: 4rem;
     }
     /* portfolio */
