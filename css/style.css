@@ -264,8 +264,8 @@ hr.dotted {
         display: flex;
         justify-content: space-evenly;
     }
-    .list-for-banner li{
-        text-align: left;
+    .list-for-banner a{
+        width: 50%;
     }
     /* portfolio */
   
